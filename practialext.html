@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Gallery image </title>
+</head>
+<body>
+
+<header>
+    <h1> Gallery image </h1>
+</header>
+
+<section class="gallery">
+
+    <div class=“container”>
+        <img src="https://picsum.photos/400/300?1" alt="Image 1">
+    </div>
+
+    <div class=“container”>
+        <img src="https://picsum.photos/400/300?2" alt="Image 2">
+    </div>
+
+    <div class=“container”>
+        <img src="https://picsum.photos/400/300?3" alt="Image 3">
+    </div>
+
+    <div class="container”>
+        <img src="https://picsum.photos/400/300?4" alt="Image 4">
+    </div>
+
+    <div class="container”>
+        <img src="https://picsum.photos/400/300?5" alt="Image 5">
+    </div>
+
+    <div class="container”>
+        <img src="https://picsum.photos/400/300?6" alt="Image 6">
+    </div>
+
+    <div class=“container”>
+        <img src="https://picsum.photos/400/300?7" alt="Image 7">
+    </div>
+
+    <div class=“container”>
+        <img src="https://picsum.photos/400/300?8" alt="Image 8">
+    </div>
+
+</section>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+/* Gallery Grid Layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Card */
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
